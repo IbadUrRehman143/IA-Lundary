@@ -10,6 +10,15 @@
     }
 }
 /* global.css */
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .responsive-table-container {
+    @apply overflow-x-auto whitespace-nowrap -mx-4 px-4;
+  }
+}
+/* global.css */
 @layer components {
   .main-container {
     @apply w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
